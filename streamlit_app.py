@@ -13,16 +13,17 @@ forums](https://discuss.streamlit.io).
 
 In the meantime, below is an example of what you can do with just a few lines of code:
 """
-options = st.multiselect(
-    'What are your favorite colors',
-    ['Green', 'Yellow', 'Red', 'Blue'],
-    ['Yellow', 'Red'])
+people = st.multiselect(
+    'Who would you like displayed?',
+    ['Antonio', 'Alejandra', 'Nima', 'Luca'],
+    ['Antonio', 'Alejandra'])
 
-st.write('You selected:', options)
+st.write('You selected:', people)
+st.write(type(people))
 
 timestamps = st.slider(
     "Schedule your appointment:",
-    value=(datetime(2020, 1, 1, 9, 30), datetime(2020, 1, 1, 0, 0)),
+    value=(datetime(2024, 3, 29, 0, 0), datetime.today()),
     format="MM/DD/YY")
 st.write("You're scheduled for:", timestamps)
 
