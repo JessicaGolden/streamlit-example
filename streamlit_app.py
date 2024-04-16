@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 from datetime import datetime
+import scripts
 
 """
 # Welcome to Streamlit!
@@ -26,6 +27,11 @@ timestamps = st.slider(
     value=(datetime(2024, 3, 29, 0, 0), datetime.today()),
     format="MM/DD/YY")
 st.write("You're scheduled for:", timestamps)
+
+
+st.write(scripts.analysis(timestamps[0], timestamps[1], people))
+
+
 
 
 num_points = st.slider("Number of points in spiral", 1, 10000, 1100)
