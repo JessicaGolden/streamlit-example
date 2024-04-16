@@ -2,6 +2,7 @@ import altair as alt
 import numpy as np
 import pandas as pd
 import streamlit as st
+from datetime import datetime
 
 """
 # Welcome to Streamlit!
@@ -12,6 +13,17 @@ forums](https://discuss.streamlit.io).
 
 In the meantime, below is an example of what you can do with just a few lines of code:
 """
+people = st.multiselect(
+    'Who would you like to display?',
+    ['Ale', 'Nima', 'Red', 'Blue'],
+    ['Yellow', 'Red'])
+
+timestamps = st.slider(
+    "Schedule your appointment:",
+    value=(datetime(2020, 1, 1, 9, 30), datetime(2020, 1, 1, 0, 0)),
+    format="MM/DD/YY")
+st.write("You're scheduled for:", timestamps)
+
 
 num_points = st.slider("Number of points in spiral", 1, 10000, 1100)
 num_turns = st.slider("Number of turns in spiral", 1, 300, 31)
