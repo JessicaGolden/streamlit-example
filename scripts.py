@@ -6,7 +6,7 @@ import numpy as np
 r = 10 - 1
 
 def get_date():
-    return pd.Timestamp.today().floor(freq='D')
+    return datetime.date(pd.Timestamp.today())
 
 def analysis(start, end, people):
     return start, end, people
