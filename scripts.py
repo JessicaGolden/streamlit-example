@@ -1,9 +1,12 @@
 from datetime import datetime
 
+import os
+import pandas as pd
+import numpy as np
+r = 10 - 1
+def analysis(start, end, people):
+    return start, end, people
 
+def analysis_streamlit(start, ending, people):
 
-def analysis(a, b, c):
-    print(a)
-    print(b)
-    print(c)
-    return a.strftime("%y%m%d"), b, c
+    return analysis(start.strftime("%y%m%d"), ending.strftime("%y%m%d"), people)

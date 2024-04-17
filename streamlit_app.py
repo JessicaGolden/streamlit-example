@@ -29,7 +29,7 @@ timestamps = st.slider(
 st.write("You're scheduled for:", timestamps)
 
 
-st.write(scripts.analysis(timestamps[0], timestamps[1], people))
+st.write(scripts.analysis_streamlit(timestamps[0], timestamps[1], people))
 
 
 
