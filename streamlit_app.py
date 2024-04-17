@@ -48,7 +48,7 @@ people = st.multiselect(
     ['Antonio', 'Alejandra'])
 
 st.write('You selected:', people)
-st.write(type(people))
+
 
 timestamps = st.slider(
     "Schedule your appointment:",
