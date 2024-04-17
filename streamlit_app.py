@@ -50,7 +50,7 @@ timestamps = st.slider(
     format="MM/DD/YY"), #scripts.get_date())
 st.write("You selected the dates:", timestamps)
 
-st.write(scripts.analysis_streamlit(timestamps[0], timestamps[1], people))
+st.write(scripts.analysis_streamlit(timestamps[0][0], timestamps[0][1], people))
 
 '''
 Examples of what can be done, I need this to be migrated to the awear-data repository before being able to create the plots and give figures
