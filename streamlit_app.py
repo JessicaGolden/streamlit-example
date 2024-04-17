@@ -43,10 +43,11 @@ people = st.multiselect(
 
 st.write('You selected:', people)
 
+now = datetime.today()
 
 timestamps = st.slider(
     "Schedule your appointment:",
-    value=(datetime(2024, 3, 29, 0, 0), datetime.today()),
+    value=(datetime(2024, 3, 29, 0, 0), now),
     format="MM/DD/YY")
 st.write("You selected the dates:", timestamps)
 
