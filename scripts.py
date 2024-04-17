@@ -7,7 +7,7 @@ r = 10 - 1
 
 def get_date():
     now = datetime.date.today()
-    return datetime.datetime(now.year, now.month, now.day) 
+    return datetime.datetime(2024, 4, 16) 
 
 def analysis(start, end, people):
     return start, end, people
