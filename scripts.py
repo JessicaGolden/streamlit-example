@@ -6,7 +6,7 @@ import numpy as np
 r = 10 - 1
 
 def get_date():
-    return datetime.date.today()
+    return datetime(datetime.date.today())
 
 def analysis(start, end, people):
     return start, end, people
