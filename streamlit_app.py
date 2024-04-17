@@ -46,8 +46,7 @@ st.write('You selected:', people)
 
 timestamps = st.slider(
     "Schedule your appointment:",
-    value=(datetime.date(2024, 3, 29), datetime.date(2024, 4, 5)), #scripts.get_date()
-    format="MM/DD/YY")
+    value=(datetime.date(2024, 3, 29), datetime.date(2024, 4, 5))), #scripts.get_date())
 st.write("You selected the dates:", timestamps)
 
 
