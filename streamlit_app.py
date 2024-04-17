@@ -43,7 +43,7 @@ people = st.multiselect(
 
 st.write('You selected:', people)
 
-now = datetime.today()
+now = datetime.today().floor(freq='D')
 
 timestamps = st.slider(
     "Schedule your appointment:",
