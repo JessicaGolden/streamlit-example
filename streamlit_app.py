@@ -34,13 +34,7 @@ if not check_password():
     st.stop()  # Do not continue if check_password is not True.
 
 """
-# Welcome to Streamlit!
-
-Edit `/streamlit_app.py` to customize this app to your heart's desire :heart:.
-If you have any questions, checkout our [documentation](https://docs.streamlit.io) and [community
-forums](https://discuss.streamlit.io).
-
-In the meantime, below is an example of what you can do with just a few lines of code:
+# Welcome to the analytics dashboard!
 """
 people = st.multiselect(
     'Who would you like displayed?',
@@ -54,12 +48,14 @@ timestamps = st.slider(
     "Schedule your appointment:",
     value=(datetime(2024, 3, 29, 0, 0), datetime.today()),
     format="MM/DD/YY")
-st.write("You're scheduled for:", timestamps)
+st.write("You selected the dates:", timestamps)
 
 
 st.write(scripts.analysis_streamlit(timestamps[0], timestamps[1], people))
 
-
+'''
+Examples of what can be done, I need this to be migrated to the awear-data repository before being able to create the plots and give figures
+'''
 
 
 num_points = st.slider("Number of points in spiral", 1, 10000, 1100)
